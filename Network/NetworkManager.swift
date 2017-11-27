@@ -26,29 +26,35 @@ class NetworkManager {
     }
 }
 
-// MARK: - Config Request
+// MARK: - HttpMethod
 
 extension NetworkManager {
-    func get() -> NetworkManager {
+    func get(from path: String) -> NetworkManager {
+        url = appendPath(path)
         method = .get
         return self
     }
     
-    func post() -> NetworkManager {
+    func post(to path: String) -> NetworkManager {
+        url = appendPath(path)
         method = .post
         return self
     }
     
-    func delete() -> NetworkManager {
+    func delete(from path: String) -> NetworkManager {
+        url = appendPath(path)
         method = .delete
         return self
     }
     
-    func put() -> NetworkManager {
+    func put(to path: String) -> NetworkManager {
+        url = appendPath(path)
         method = .put
         return self
     }
 }
+
+// MARK: - Congfig
 
 extension NetworkManager {
     func url(_ path: String) -> NetworkManager {
@@ -71,6 +77,8 @@ extension NetworkManager {
         return self
     }
 }
+
+// MARK: - Request
 
 extension NetworkManager {
     func request(success: @escaping (_ data: [String: Any]) -> Void, failure: ((Error) -> Void)? = nil) {
