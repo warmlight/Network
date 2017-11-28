@@ -121,8 +121,8 @@
 				0445F9D01FCB1DAF004E6920 /* Dictionary+Extension.swift */,
 				0445F9CE1FCB1532004E6920 /* URLPath.swift */,
 				04C57B301FC6620F002C8424 /* SessionConfiguration.swift */,
-				04C24A1B1F8CB0D600452A19 /* Main.storyboard */,
 				04C24A1E1F8CB0D600452A19 /* Assets.xcassets */,
+				04C24A1B1F8CB0D600452A19 /* Main.storyboard */,
 				04C24A201F8CB0D600452A19 /* LaunchScreen.storyboard */,
 				04C24A231F8CB0D600452A19 /* Info.plist */,
 			);

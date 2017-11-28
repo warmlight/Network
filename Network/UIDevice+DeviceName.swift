@@ -1,9 +1,9 @@
 //
-//  UIDevice+DeviceName.swift
-//  GiveLove
+//  AppDelegate.swift
+//  Network
 //
-//  Created by 耿文明 on 2017/3/13.
-//  Copyright © 2017年 中智关爱通. All rights reserved.
+//  Created by lyy on 2017/10/10.
+//  Copyright © 2017年 lyy. All rights reserved.
 //
 
 import UIKit
@@ -61,10 +61,6 @@ public extension UIDevice {
 
 extension UIDevice {
     public func isiPhoneX() -> Bool {
-        if UIScreen.main.bounds.height == 812 {
-            return true
-        }
-
-        return false
+        return UIScreen.main.bounds.height == 812
     }
 }
